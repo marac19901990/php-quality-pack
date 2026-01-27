@@ -1,0 +1,17 @@
+grumphp:
+    hooks_dir: ~
+    hooks_preset: local
+    stop_on_failure: true
+    ignore_unstaged_changes: false
+
+    tasks:
+        phpstan:
+            configuration: vendor/marac19901990/php-quality-pack/rules/phpstan.neon
+            use_grumphp_paths: true  # Analyze only changed files for faster pre-commit
+            triggered_by: [php]
+
+        phpcsfixer:
+            config: vendor/marac19901990/php-quality-pack/rules/php-cs-fixer.php
+            triggered_by: [php]
+            diff: true
+            config_contains_finder: false

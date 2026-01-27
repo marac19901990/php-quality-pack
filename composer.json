@@ -1,0 +1,21 @@
+{
+    "name": "marac19901990/php-quality-pack",
+    "description": "Zero-config PHP code quality standards with GrumPHP, PHPStan, and PHP-CS-Fixer",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "phpro/grumphp": "^1.0 || ^2.0",
+        "friendsofphp/php-cs-fixer": "^3.1",
+        "phpstan/phpstan": "^2.0",
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan-deprecation-rules": "^2.0",
+        "phpstan/phpstan-strict-rules": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpro/grumphp": true,
+            "phpstan/extension-installer": true
+        }
+    }
+}

@@ -1,5 +1,9 @@
 # PHP Quality Pack
 
+[![Packagist Version](https://img.shields.io/packagist/v/marac19901990/php-quality-pack)](https://packagist.org/packages/marac19901990/php-quality-pack)
+[![PHP Version](https://img.shields.io/packagist/php-v/marac19901990/php-quality-pack)](https://packagist.org/packages/marac19901990/php-quality-pack)
+[![License](https://img.shields.io/packagist/l/marac19901990/php-quality-pack)](https://packagist.org/packages/marac19901990/php-quality-pack)
+
 Zero-config PHP code quality standards with GrumPHP, PHPStan, and PHP-CS-Fixer. Installs pre-commit hooks that automatically run static analysis and code style fixes on every commit.
 
 ## What It Does

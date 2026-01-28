@@ -4,11 +4,3 @@ includes:
 
 parameters:
     level: 9
-
-    paths:
-        - %currentWorkingDirectory%/src
-
-    ignoreErrors:
-        - message: "#^Dynamic call to static method PHPUnit\\\\Framework\\\\.*$#"
-          path: %currentWorkingDirectory%/tests/
-          reportUnmatched: false

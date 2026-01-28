@@ -3,6 +3,27 @@
     "description": "Zero-config PHP code quality standards with GrumPHP, PHPStan, and PHP-CS-Fixer",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "phpstan",
+        "php-cs-fixer",
+        "grumphp",
+        "code-quality",
+        "static-analysis",
+        "coding-standards",
+        "pre-commit",
+        "git-hooks"
+    ],
+    "authors": [
+        {
+            "name": "Marko Petrovic",
+            "email": "maracs1990@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/marac19901990/php-quality-pack",
+    "support": {
+        "issues": "https://github.com/marac19901990/php-quality-pack/issues",
+        "source": "https://github.com/marac19901990/php-quality-pack"
+    },
     "require": {
         "php": "^8.2",
         "phpro/grumphp": "^1.0 || ^2.0",
@@ -16,6 +37,7 @@
         "allow-plugins": {
             "phpro/grumphp": true,
             "phpstan/extension-installer": true
-        }
+        },
+        "sort-packages": true
     }
 }

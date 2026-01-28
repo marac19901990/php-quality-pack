@@ -5,23 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
-
-### Added
-- `.gitattributes` for cleaner distribution archives
-- GitHub Actions workflow example in README
-- Known Issues section in README
-- Recommended `.gitignore` entries in README
-
-### Changed
-- Removed hardcoded `src/` path from PHPStan config for better flexibility
-- Manual PHPStan commands now require explicit path argument
-- Improved documentation for baseline file requirement
-
-### Fixed
-- Removed `tests/` path from PHPStan ignoreErrors (caused failures when projects don't have tests directory)
-
-## [1.0.0] - 2025-01-27
+## [1.0.0] - 2025-01-28
 
 ### Added
 - Initial release
@@ -31,3 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for PHP 8.2+
 - Automatic installation of git hooks on `composer install`
 - Only analyzes changed files for fast pre-commit validation
+- `.gitattributes` for cleaner distribution archives
+- GitHub Actions workflow example in README
+- Known Issues section in README
+- Recommended `.gitignore` entries in README

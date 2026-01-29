@@ -1,5 +1,6 @@
 # PHP Quality Pack
 
+[![CI](https://github.com/marac19901990/php-quality-pack/actions/workflows/ci.yml/badge.svg)](https://github.com/marac19901990/php-quality-pack/actions/workflows/ci.yml)
 [![Packagist Version](https://img.shields.io/packagist/v/marac19901990/php-quality-pack)](https://packagist.org/packages/marac19901990/php-quality-pack)
 [![PHP Version](https://img.shields.io/packagist/php-v/marac19901990/php-quality-pack)](https://packagist.org/packages/marac19901990/php-quality-pack)
 [![License](https://img.shields.io/packagist/l/marac19901990/php-quality-pack)](https://packagist.org/packages/marac19901990/php-quality-pack)

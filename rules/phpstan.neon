@@ -3,4 +3,4 @@ includes:
     - %currentWorkingDirectory%/phpstan-baseline.neon
 
 parameters:
-    level: 9
+    level: 5

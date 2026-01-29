@@ -10,7 +10,7 @@ Zero-config PHP code quality standards with GrumPHP, PHPStan, and PHP-CS-Fixer. 
 ## What It Does
 
 - **Installs GrumPHP pre-commit hooks** automatically on `composer install`
-- **Runs PHPStan** (level 9, strict rules, deprecation warnings) on every commit
+- **Runs PHPStan** (level 5, strict rules, deprecation warnings) on every commit
 - **Runs PHP-CS-Fixer** (PSR-12 + sensible rules) on every commit
 - **Zero-config** - works out of the box with sensible defaults
 - **Only checks changed files** for fast pre-commit validation
@@ -19,7 +19,7 @@ Zero-config PHP code quality standards with GrumPHP, PHPStan, and PHP-CS-Fixer. 
 
 | Tool | Configuration |
 |------|---------------|
-| PHPStan | Level 9, strict rules, deprecation warnings, bleeding edge |
+| PHPStan | Level 5, strict rules, deprecation warnings, bleeding edge |
 | PHP-CS-Fixer | PER-CS, PHP 8.2 migration, sorted imports, trailing commas, single quotes |
 | PHP Version | 8.2+ required |
 
@@ -191,7 +191,7 @@ The `phpstan/extension-installer` automatically registers these extensions.
 
 Use directly via `composer require` if you're happy with:
 - PSR-12 coding standards
-- PHPStan level 9 with strict rules
+- PHPStan level 5 with strict rules
 - Deprecation warnings enabled
 
 Good for: personal projects, new projects, teams aligned with these standards.
@@ -213,7 +213,7 @@ Good for: organizations with specific coding standards.
 ## Default Configuration Details
 
 ### PHPStan (`rules/phpstan.neon`)
-- Level 9 (strictest)
+- Level 5 (balanced)
 - Strict rules enabled
 - Deprecation warnings enabled
 - Bleeding edge rules enabled

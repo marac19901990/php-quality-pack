@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-01-29
+
+### Changed
+- Lowered PHPStan level from 9 to 5 for better adoption
+- Level 5 catches real bugs while being less strict about type hints
+
+### Added
+- GitHub Actions CI workflow for PHP 8.2, 8.3, 8.4
+- CI status badge in README
+
 ## [1.0.0] - 2025-01-28
 
 ### Added

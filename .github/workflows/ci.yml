@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-version: ['8.2', '8.3', '8.4']
+
+    name: PHP ${{ matrix.php-version }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          coverage: none
+
+      - name: Install dependencies
+        run: composer install --prefer-dist --no-progress
+
+      - name: Verify PHPStan config loads
+        run: |
+          echo "parameters:" > phpstan-baseline.neon
+          vendor/bin/phpstan analyse --configuration=rules/phpstan.neon --level=0 rules/ --no-progress
+
+      - name: Verify PHP-CS-Fixer config loads
+        run: vendor/bin/php-cs-fixer fix --config=rules/php-cs-fixer.php --dry-run --diff
